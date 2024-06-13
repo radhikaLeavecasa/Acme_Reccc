@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D318EBD4-CF94-4196-9978-52C80342AD3D"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6966E61A-4138-4099-9960-520B1F276407"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Acme Vendor App/View/ListingVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6966E61A-4138-4099-9960-520B1F276407 - ada9b008d6d98dfe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.String) -&gt; () in Acme_Vendor_App.ListingVC.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/ListingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "904">
+               </Location>
+               <Location
+                  uuid = "6966E61A-4138-4099-9960-520B1F276407 - ada9b008d6d98dfe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.String) -&gt; () in Acme_Vendor_App.ListingVC.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/ListingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "572">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C3D143B-987F-4CE6-971E-C858A809489C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Acme Vendor App/View/SiteDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "actionAcceptReject(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9C3D143B-987F-4CE6-971E-C858A809489C - eccf9d301107f08d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Acme_Vendor_App.SiteDetailVC.actionAcceptReject(__C.UIButton) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/SiteDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "1540">
+               </Location>
+               <Location
+                  uuid = "9C3D143B-987F-4CE6-971E-C858A809489C - 265090299a7b7af6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;__C.UIAlertAction&gt;) -&gt; () in Acme_Vendor_App.SiteDetailVC.actionAcceptReject(__C.UIButton) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/SiteDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "896">
+               </Location>
+               <Location
+                  uuid = "9C3D143B-987F-4CE6-971E-C858A809489C - 70a7234df53cf8f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.String) -&gt; () in closure #2 (Swift.Optional&lt;__C.UIAlertAction&gt;) -&gt; () in Acme_Vendor_App.SiteDetailVC.actionAcceptReject(__C.UIButton) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/SiteDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BDAE8B4-5507-4442-AFCF-045415424544"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Acme Vendor App/View/AddReplacementDetailsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "actionReplace(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2BDAE8B4-5507-4442-AFCF-045415424544 - 44320f13810cffcd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.String) -&gt; () in Acme_Vendor_App.AddReplacementDetailsVC.actionReplace(Any) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/AddReplacementDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "2BDAE8B4-5507-4442-AFCF-045415424544 - c38b7fd642cc585"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Acme_Vendor_App.AddReplacementDetailsVC.actionReplace(Any) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/AddReplacementDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "5844">
+               </Location>
+               <Location
+                  uuid = "2BDAE8B4-5507-4442-AFCF-045415424544 - 44320f13810cffcd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.String) -&gt; () in Acme_Vendor_App.AddReplacementDetailsVC.actionReplace(Any) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/AddReplacementDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "2BDAE8B4-5507-4442-AFCF-045415424544 - c38b7fd642cc585"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Acme_Vendor_App.AddReplacementDetailsVC.actionReplace(Any) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/AddReplacementDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "5920">
+               </Location>
+               <Location
+                  uuid = "2BDAE8B4-5507-4442-AFCF-045415424544 - c38b7fd642cc585"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Acme_Vendor_App.AddReplacementDetailsVC.actionReplace(Any) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/AddReplacementDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "5960">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
