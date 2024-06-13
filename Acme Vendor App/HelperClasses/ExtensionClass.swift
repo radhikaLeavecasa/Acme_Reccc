@@ -89,3 +89,10 @@ extension String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
 }
+
+extension UIImage{
+    
+    class func placeholderImage() -> UIImage{
+        return UIImage.init(named: "ic_defaultPic") ?? UIImage()
+    }
+}

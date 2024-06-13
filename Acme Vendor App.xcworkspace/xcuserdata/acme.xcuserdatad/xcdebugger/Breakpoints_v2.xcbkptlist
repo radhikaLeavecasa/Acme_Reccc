@@ -7,63 +7,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "24DE1683-C048-47FF-A95B-8EF35EB98949"
+            uuid = "6966E61A-4138-4099-9960-520B1F276407"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Acme Vendor App/ViewModel/HomeVM.swift"
+            filePath = "Acme Vendor App/View/ListingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "logoutApi(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AE276BC8-09DB-4838-8D3E-9B6B19CD686A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Acme Vendor App/ViewModel/HomeVM.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "logoutApi(_:)"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "AE276BC8-09DB-4838-8D3E-9B6B19CD686A - ba92b8700ffe89d4"
+                  uuid = "6966E61A-4138-4099-9960-520B1F276407 - ada9b008d6d98dfe"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.HomeVM.logoutApi((Swift.Bool, Swift.String) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Bool, Swift.String) -&gt; () in Acme_Vendor_App.ListingVC.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
                   moduleName = "Acme Vendor App"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/ViewModel/HomeVM.swift"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/ListingVC.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "132">
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "904">
                </Location>
                <Location
-                  uuid = "AE276BC8-09DB-4838-8D3E-9B6B19CD686A - 672cd1a89ab5cf61"
+                  uuid = "6966E61A-4138-4099-9960-520B1F276407 - ada9b008d6d98dfe"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool, Swift.String, Any) -&gt; () in Acme_Vendor_App.HomeVM.logoutApi((Swift.Bool, Swift.String) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Bool, Swift.String) -&gt; () in Acme_Vendor_App.ListingVC.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
                   moduleName = "Acme Vendor App"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/ViewModel/HomeVM.swift"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/ListingVC.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "116">
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "572">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -71,488 +55,62 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BDC854EC-0844-4353-815F-8E3C8F01A3D4"
+            uuid = "9C3D143B-987F-4CE6-971E-C858A809489C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Acme Vendor App/HelperClasses/Api.swift"
+            filePath = "Acme Vendor App/View/SiteDetailVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "isSuccess(json:)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "BDC854EC-0844-4353-815F-8E3C8F01A3D4 - 4c3fa1b5c1e2f1c6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isSuccess(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "172">
-               </Location>
-               <Location
-                  uuid = "BDC854EC-0844-4353-815F-8E3C8F01A3D4 - 4c3fa1b5c1e2f1c6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isSuccess(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "400">
-               </Location>
-               <Location
-                  uuid = "BDC854EC-0844-4353-815F-8E3C8F01A3D4 - 4c3fa1b5c1e2f1c6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isSuccess(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "176">
-               </Location>
-               <Location
-                  uuid = "BDC854EC-0844-4353-815F-8E3C8F01A3D4 - 4c3fa1b5c1e2f1c6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isSuccess(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "404">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FE133B84-0887-48E4-BCC3-189FAC876430"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Acme Vendor App/HelperClasses/Api.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "isInActivate(json:)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "FE133B84-0887-48E4-BCC3-189FAC876430 - 7e37baa088e79663"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isInActivate(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "388">
-               </Location>
-               <Location
-                  uuid = "FE133B84-0887-48E4-BCC3-189FAC876430 - 7e37baa088e79663"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isInActivate(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "FE133B84-0887-48E4-BCC3-189FAC876430 - 7e37baa088e79663"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isInActivate(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "332">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F767B159-5652-46DC-94D2-050FFB541DEB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Acme Vendor App/HelperClasses/Api.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "isAlreadyLogin(json:)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "F767B159-5652-46DC-94D2-050FFB541DEB - a9cf3bcd6ff35ffd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isAlreadyLogin(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104"
-                  offsetFromSymbolStart = "388">
-               </Location>
-               <Location
-                  uuid = "F767B159-5652-46DC-94D2-050FFB541DEB - a9cf3bcd6ff35ffd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isAlreadyLogin(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "F767B159-5652-46DC-94D2-050FFB541DEB - a9cf3bcd6ff35ffd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isAlreadyLogin(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104"
-                  offsetFromSymbolStart = "332">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6506DB9C-0D69-48C1-BE6C-0996A5A8C86D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Acme Vendor App/HelperClasses/Api.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "isAlreadyAdded(json:)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "6506DB9C-0D69-48C1-BE6C-0996A5A8C86D - fca76eee6f6d64e3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isAlreadyAdded(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "113"
-                  endingLineNumber = "113"
-                  offsetFromSymbolStart = "388">
-               </Location>
-               <Location
-                  uuid = "6506DB9C-0D69-48C1-BE6C-0996A5A8C86D - fca76eee6f6d64e3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isAlreadyAdded(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "113"
-                  endingLineNumber = "113"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "6506DB9C-0D69-48C1-BE6C-0996A5A8C86D - fca76eee6f6d64e3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isAlreadyAdded(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "113"
-                  endingLineNumber = "113"
-                  offsetFromSymbolStart = "332">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1C0C4C6F-BE2E-4E9A-A746-ED62CA7EA10D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Acme Vendor App/HelperClasses/Api.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "isDocumentVerificationFalse(json:)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "1C0C4C6F-BE2E-4E9A-A746-ED62CA7EA10D - 305f1d1c630482d7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isDocumentVerificationFalse(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "388">
-               </Location>
-               <Location
-                  uuid = "1C0C4C6F-BE2E-4E9A-A746-ED62CA7EA10D - 305f1d1c630482d7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isDocumentVerificationFalse(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "1C0C4C6F-BE2E-4E9A-A746-ED62CA7EA10D - 305f1d1c630482d7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isDocumentVerificationFalse(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "332">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "494E9CE5-5B73-49EA-86F8-9C6F900EE828"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Acme Vendor App/HelperClasses/Api.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
-            landmarkName = "isMobileVarifiedFalse(json:)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "494E9CE5-5B73-49EA-86F8-9C6F900EE828 - 94320cec3d798abd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isMobileVarifiedFalse(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "388">
-               </Location>
-               <Location
-                  uuid = "494E9CE5-5B73-49EA-86F8-9C6F900EE828 - 94320cec3d798abd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isMobileVarifiedFalse(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "494E9CE5-5B73-49EA-86F8-9C6F900EE828 - 94320cec3d798abd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isMobileVarifiedFalse(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "332">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0A38CBB2-FF0A-4882-AEC0-34527375029C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Acme Vendor App/HelperClasses/Api.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "isSuccess(json:)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "0A38CBB2-FF0A-4882-AEC0-34527375029C - 4c3fa1b5c1e2f238"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isSuccess(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "2244">
-               </Location>
-               <Location
-                  uuid = "0A38CBB2-FF0A-4882-AEC0-34527375029C - 4c3fa1b5c1e2f238"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Acme_Vendor_App.isSuccess(json: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Bool"
-                  moduleName = "Acme Vendor App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/Api.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "2472">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3BD7D2BF-A2BA-4610-B541-0B2C7F8B6E5C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Acme Vendor App/HelperClasses/WebServices.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "callApi(api:method:param:encoding:header:completion:)"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "actionAcceptReject(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "3BD7D2BF-A2BA-4610-B541-0B2C7F8B6E5C - cb251ca715110469"
+                  uuid = "9C3D143B-987F-4CE6-971E-C858A809489C - eccf9d301107f08d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Alamofire.DataResponse&lt;Foundation.Data, Alamofire.AFError&gt;) -&gt; () in static Acme_Vendor_App.WebService.callApi(api: Acme_Vendor_App.Api, method: Alamofire.HTTPMethod, param: Swift.Dictionary&lt;Swift.String, Any&gt;, encoding: Alamofire.ParameterEncoding, header: Swift.Bool, completion: (Swift.Bool, Swift.String, Any) -&gt; ()) -&gt; ()"
+                  symbolName = "Acme_Vendor_App.SiteDetailVC.actionAcceptReject(__C.UIButton) -&gt; ()"
                   moduleName = "Acme Vendor App"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/WebServices.swift"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/SiteDetailVC.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "824">
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "1540">
                </Location>
                <Location
-                  uuid = "3BD7D2BF-A2BA-4610-B541-0B2C7F8B6E5C - cb251ca715110469"
+                  uuid = "9C3D143B-987F-4CE6-971E-C858A809489C - 265090299a7b7af6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Alamofire.DataResponse&lt;Foundation.Data, Alamofire.AFError&gt;) -&gt; () in static Acme_Vendor_App.WebService.callApi(api: Acme_Vendor_App.Api, method: Alamofire.HTTPMethod, param: Swift.Dictionary&lt;Swift.String, Any&gt;, encoding: Alamofire.ParameterEncoding, header: Swift.Bool, completion: (Swift.Bool, Swift.String, Any) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #2 (Swift.Optional&lt;__C.UIAlertAction&gt;) -&gt; () in Acme_Vendor_App.SiteDetailVC.actionAcceptReject(__C.UIButton) -&gt; ()"
                   moduleName = "Acme Vendor App"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/acme/Desktop/Acme%20Vendor%20App/Acme%20Vendor%20App/HelperClasses/WebServices.swift"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/SiteDetailVC.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "1460">
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "896">
+               </Location>
+               <Location
+                  uuid = "9C3D143B-987F-4CE6-971E-C858A809489C - 70a7234df53cf8f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.String) -&gt; () in closure #2 (Swift.Optional&lt;__C.UIAlertAction&gt;) -&gt; () in Acme_Vendor_App.SiteDetailVC.actionAcceptReject(__C.UIButton) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/SiteDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "96">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -560,17 +118,94 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "596C0FC2-A7CE-4C40-AFF7-639B35CADF4F"
+            uuid = "2BDAE8B4-5507-4442-AFCF-045415424544"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Acme Vendor App/HelperClasses/WebServices.swift"
+            filePath = "Acme Vendor App/View/AddReplacementDetailsVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "callApi(api:method:param:encoding:header:completion:)"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "actionReplace(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2BDAE8B4-5507-4442-AFCF-045415424544 - 44320f13810cffcd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.String) -&gt; () in Acme_Vendor_App.AddReplacementDetailsVC.actionReplace(Any) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/AddReplacementDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "2BDAE8B4-5507-4442-AFCF-045415424544 - c38b7fd642cc585"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Acme_Vendor_App.AddReplacementDetailsVC.actionReplace(Any) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/AddReplacementDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "5844">
+               </Location>
+               <Location
+                  uuid = "2BDAE8B4-5507-4442-AFCF-045415424544 - 44320f13810cffcd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.String) -&gt; () in Acme_Vendor_App.AddReplacementDetailsVC.actionReplace(Any) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/AddReplacementDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "2BDAE8B4-5507-4442-AFCF-045415424544 - c38b7fd642cc585"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Acme_Vendor_App.AddReplacementDetailsVC.actionReplace(Any) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/AddReplacementDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "5920">
+               </Location>
+               <Location
+                  uuid = "2BDAE8B4-5507-4442-AFCF-045415424544 - c38b7fd642cc585"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Acme_Vendor_App.AddReplacementDetailsVC.actionReplace(Any) -&gt; ()"
+                  moduleName = "Acme Vendor App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/acme/Desktop/Acme%20Recce%20App/Acme%20Vendor%20App/View/AddReplacementDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "5960">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

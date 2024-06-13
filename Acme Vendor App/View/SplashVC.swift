@@ -15,8 +15,7 @@ class SplashVC: UIViewController {
             let userToken = Cookies.getUserToken()
             
             if userToken != "" {
-                let vc = ViewControllerHelper.getViewController(ofType: .HomeVC, StoryboardName: .Main) as! HomeVC
-                vc.id = Int(userToken) ?? 0
+                let vc = ViewControllerHelper.getViewController(ofType: .ListingVC, StoryboardName: .Main) as! ListingVC
                 self.setView(vc: vc)
             } else{
                 let vc = ViewControllerHelper.getViewController(ofType: .LoginVC, StoryboardName: .Main) as! LoginVC

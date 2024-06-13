@@ -176,6 +176,8 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/AASignatureView-framework/AASignatureView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AdvancedPageControl-framework/AdvancedPageControl.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-framework/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift-framework/IQKeyboardManagerSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView-framework/NVActivityIndicatorView.framework"
@@ -185,6 +187,8 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/TTGSnackbar-framework/TTGSnackbar.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/AASignatureView-framework/AASignatureView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AdvancedPageControl-framework/AdvancedPageControl.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-framework/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift-framework/IQKeyboardManagerSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView-framework/NVActivityIndicatorView.framework"

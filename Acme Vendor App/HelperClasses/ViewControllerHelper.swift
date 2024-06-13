@@ -15,11 +15,16 @@ enum StoryboardName : String{
 
 enum ViewControllerType : String {
     
+    case AddReplacementDetailsVC
     case WWCalendarTimeSelector
     case HomeVC
+    case ListingVC
     case SplashVC
     case LoginVC
     case OtpVC
+    case SignaturePopVC
+    case SiteDetailVC
+    case RejectionVC
 }
 
 class ViewControllerHelper: NSObject {

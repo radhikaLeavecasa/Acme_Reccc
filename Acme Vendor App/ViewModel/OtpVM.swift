@@ -8,7 +8,6 @@
 import UIKit
 
 class OtpVM: NSObject {
-    var id = Int()
     
     func otpVerifyApi(_ param:[String:AnyObject], _ completion: @escaping (Bool,String) -> Void) {
         Proxy.shared.loadAnimation()
@@ -16,9 +15,9 @@ class OtpVM: NSObject {
             Proxy.shared.stopAnimation()
             if status == true {
                 if let data = response as? [String:Any] {
-                    let data2 = data["data"] as? [String:Any]
-                    self.id = data2?["id"] as? Int ?? 0
-                    GetData.share.saveUserToken(token: "\(self.id)")
+                    let userData = data[CommonParam.DATA] as? [String:Any]
+                    Cookies.userInfoSave(dict:userData)
+                    GetData.share.saveUserToken(token: userData?[CommonParam.USER_TOKEN] as? String ?? "")
                     completion(true, "")
                 }
             } else {

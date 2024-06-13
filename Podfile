@@ -8,6 +8,8 @@ pod 'ObjectMapper'
 pod 'SDWebImage'
 pod 'TTGSnackbar'
 pod 'OTPFieldView'
+pod 'AASignatureView'
+pod 'AdvancedPageControl'
 
 target 'Acme Vendor App' do
   # Comment the next line if you don't want to use dynamic frameworks

@@ -35,6 +35,7 @@
 		72582CA22C102D6700A4CEF1 /* WWCalendarTimeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72582CA02C102D6700A4CEF1 /* WWCalendarTimeSelector.swift */; };
 		72582CA32C102D6700A4CEF1 /* WWCalendarTimeSelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72582CA12C102D6700A4CEF1 /* WWCalendarTimeSelector.storyboard */; };
 		72582CAA2C10401E00A4CEF1 /* DMSans_18pt-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72582CA92C10401E00A4CEF1 /* DMSans_18pt-Black.ttf */; };
+		7267F1D32C18558D00F50B65 /* RejectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7267F1D22C18558D00F50B65 /* RejectionVC.swift */; };
 		7271F4F12C0DDC1A00372593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7271F4F02C0DDC1A00372593 /* AppDelegate.swift */; };
 		7271F4F32C0DDC1A00372593 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7271F4F22C0DDC1A00372593 /* SceneDelegate.swift */; };
 		7271F4F52C0DDC1A00372593 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7271F4F42C0DDC1A00372593 /* HomeVC.swift */; };
@@ -47,6 +48,20 @@
 		7271F5222C0DE19400372593 /* ExtensionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7271F5212C0DE19400372593 /* ExtensionClass.swift */; };
 		7271F5262C0DE4B900372593 /* DMSans_24pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7271F5242C0DE4B900372593 /* DMSans_24pt-Regular.ttf */; };
 		7271F5272C0DE4B900372593 /* DMSans_24pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7271F5252C0DE4B900372593 /* DMSans_24pt-Medium.ttf */; };
+		729C7A1E2C1AF25700AFC90C /* ReplacementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C7A1D2C1AF25700AFC90C /* ReplacementVC.swift */; };
+		729C7A202C1AF56300AFC90C /* AddReplacementDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C7A1F2C1AF56300AFC90C /* AddReplacementDetailsVM.swift */; };
+		729C7A222C1AFB0600AFC90C /* AddReplacementDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729C7A212C1AFB0600AFC90C /* AddReplacementDetailsVC.swift */; };
+		72E3D1FC2C12E3AE0041929A /* SignaturePopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E3D1FB2C12E3AE0041929A /* SignaturePopVC.swift */; };
+		72E3D1FF2C13150C0041929A /* OptionsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E3D1FE2C13150C0041929A /* OptionsCVC.swift */; };
+		72E3D2012C1315600041929A /* SiteCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E3D2002C1315600041929A /* SiteCVC.swift */; };
+		72E3D2032C1316040041929A /* ListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E3D2022C1316040041929A /* ListingVC.swift */; };
+		72E3D2052C1319BD0041929A /* ListingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E3D2042C1319BD0041929A /* ListingVM.swift */; };
+		72E3D2072C131D580041929A /* ListingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E3D2062C131D580041929A /* ListingModel.swift */; };
+		72E3D2092C131E500041929A /* Cookies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E3D2082C131E500041929A /* Cookies.swift */; };
+		72EC85542C133A5D00BA6CF7 /* SiteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC85532C133A5D00BA6CF7 /* SiteDetailVC.swift */; };
+		72EC855A2C13495100BA6CF7 /* SiteDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC85592C13495100BA6CF7 /* SiteDetailVM.swift */; };
+		72EC855D2C135A8E00BA6CF7 /* SiteImagesXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC855B2C135A8E00BA6CF7 /* SiteImagesXIB.swift */; };
+		72EC855E2C135A8E00BA6CF7 /* SiteImagesXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72EC855C2C135A8E00BA6CF7 /* SiteImagesXIB.xib */; };
 		D2EEEDD6A8B25AFEE8ABE882 /* Pods_Acme_Vendor_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B600A993E8AFF66D475C4 /* Pods_Acme_Vendor_AppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +112,7 @@
 		72582CA02C102D6700A4CEF1 /* WWCalendarTimeSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCalendarTimeSelector.swift; sourceTree = "<group>"; };
 		72582CA12C102D6700A4CEF1 /* WWCalendarTimeSelector.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WWCalendarTimeSelector.storyboard; sourceTree = "<group>"; };
 		72582CA92C10401E00A4CEF1 /* DMSans_18pt-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_18pt-Black.ttf"; sourceTree = "<group>"; };
+		7267F1D22C18558D00F50B65 /* RejectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RejectionVC.swift; sourceTree = "<group>"; };
 		7271F4ED2C0DDC1A00372593 /* Acme Vendor App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Acme Vendor App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7271F4F02C0DDC1A00372593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7271F4F22C0DDC1A00372593 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +129,20 @@
 		7271F5212C0DE19400372593 /* ExtensionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionClass.swift; sourceTree = "<group>"; };
 		7271F5242C0DE4B900372593 /* DMSans_24pt-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-Regular.ttf"; sourceTree = "<group>"; };
 		7271F5252C0DE4B900372593 /* DMSans_24pt-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans_24pt-Medium.ttf"; sourceTree = "<group>"; };
+		729C7A1D2C1AF25700AFC90C /* ReplacementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplacementVC.swift; sourceTree = "<group>"; };
+		729C7A1F2C1AF56300AFC90C /* AddReplacementDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReplacementDetailsVM.swift; sourceTree = "<group>"; };
+		729C7A212C1AFB0600AFC90C /* AddReplacementDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReplacementDetailsVC.swift; sourceTree = "<group>"; };
+		72E3D1FB2C12E3AE0041929A /* SignaturePopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaturePopVC.swift; sourceTree = "<group>"; };
+		72E3D1FE2C13150C0041929A /* OptionsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsCVC.swift; sourceTree = "<group>"; };
+		72E3D2002C1315600041929A /* SiteCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteCVC.swift; sourceTree = "<group>"; };
+		72E3D2022C1316040041929A /* ListingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingVC.swift; sourceTree = "<group>"; };
+		72E3D2042C1319BD0041929A /* ListingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingVM.swift; sourceTree = "<group>"; };
+		72E3D2062C131D580041929A /* ListingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingModel.swift; sourceTree = "<group>"; };
+		72E3D2082C131E500041929A /* Cookies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookies.swift; sourceTree = "<group>"; };
+		72EC85532C133A5D00BA6CF7 /* SiteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteDetailVC.swift; sourceTree = "<group>"; };
+		72EC85592C13495100BA6CF7 /* SiteDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteDetailVM.swift; sourceTree = "<group>"; };
+		72EC855B2C135A8E00BA6CF7 /* SiteImagesXIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteImagesXIB.swift; sourceTree = "<group>"; };
+		72EC855C2C135A8E00BA6CF7 /* SiteImagesXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SiteImagesXIB.xib; sourceTree = "<group>"; };
 		7482FBF7BCF44BAF354FDBC2 /* Pods_Acme_Vendor_App_Acme_Vendor_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Acme_Vendor_App_Acme_Vendor_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8F5203483AE6E1ACA2287C /* Pods-Acme Vendor AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acme Vendor AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Acme Vendor AppTests/Pods-Acme Vendor AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B2D6BA15AEDFB8D3192ADAC6 /* Pods_Acme_Vendor_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Acme_Vendor_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,7 +184,13 @@
 			children = (
 				7271F4F42C0DDC1A00372593 /* HomeVC.swift */,
 				7251E56A2C0EDB3900A900CE /* SplashVC.swift */,
+				72E3D2022C1316040041929A /* ListingVC.swift */,
+				7267F1D22C18558D00F50B65 /* RejectionVC.swift */,
+				72EC85532C133A5D00BA6CF7 /* SiteDetailVC.swift */,
+				729C7A212C1AFB0600AFC90C /* AddReplacementDetailsVC.swift */,
+				72E3D1FB2C12E3AE0041929A /* SignaturePopVC.swift */,
 				7251E5842C0F241A00A900CE /* OtpVC.swift */,
+				729C7A1D2C1AF25700AFC90C /* ReplacementVC.swift */,
 				7251E5822C0F23EF00A900CE /* LoginVC.swift */,
 			);
 			path = View;
@@ -164,6 +200,9 @@
 			isa = PBXGroup;
 			children = (
 				7251E5732C0EE3AC00A900CE /* HomeVM.swift */,
+				72EC85592C13495100BA6CF7 /* SiteDetailVM.swift */,
+				729C7A1F2C1AF56300AFC90C /* AddReplacementDetailsVM.swift */,
+				72E3D2042C1319BD0041929A /* ListingVM.swift */,
 				7251E5862C0F252800A900CE /* LoginVM.swift */,
 				7251E5882C0F293400A900CE /* OtpVM.swift */,
 			);
@@ -174,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				7251E57E2C0EEA5B00A900CE /* FetchDataModel.swift */,
+				72E3D2062C131D580041929A /* ListingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,6 +283,7 @@
 		7271F4EF2C0DDC1A00372593 /* Acme Vendor App */ = {
 			isa = PBXGroup;
 			children = (
+				72E3D1FD2C1314740041929A /* Xibs */,
 				7251E57D2C0EEA4900A900CE /* Model */,
 				7251E5722C0EE38A00A900CE /* ViewModel */,
 				7251E5692C0EDACB00A900CE /* View */,
@@ -282,6 +323,7 @@
 				7251E5922C0F2E5C00A900CE /* WWCalendarTimeSelector */,
 				7271F5212C0DE19400372593 /* ExtensionClass.swift */,
 				7251E56C2C0EE05F00A900CE /* ViewControllerHelper.swift */,
+				72E3D2082C131E500041929A /* Cookies.swift */,
 				7251E5802C0EF2A100A900CE /* UIImagePicker.swift */,
 				7251E5772C0EE7AB00A900CE /* Proxy.swift */,
 				7251E5792C0EE7F000A900CE /* CommonFunctions.swift */,
@@ -301,6 +343,17 @@
 				72582CA92C10401E00A4CEF1 /* DMSans_18pt-Black.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		72E3D1FD2C1314740041929A /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				72E3D1FE2C13150C0041929A /* OptionsCVC.swift */,
+				72E3D2002C1315600041929A /* SiteCVC.swift */,
+				72EC855B2C135A8E00BA6CF7 /* SiteImagesXIB.swift */,
+				72EC855C2C135A8E00BA6CF7 /* SiteImagesXIB.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 		7C2C5808E3D30138D869FB08 /* Pods */ = {
@@ -435,6 +488,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72EC855E2C135A8E00BA6CF7 /* SiteImagesXIB.xib in Resources */,
 				7271F4FD2C0DDC1C00372593 /* LaunchScreen.storyboard in Resources */,
 				7271F5262C0DE4B900372593 /* DMSans_24pt-Regular.ttf in Resources */,
 				72582CAA2C10401E00A4CEF1 /* DMSans_18pt-Black.ttf in Resources */,
@@ -569,20 +623,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72EC855D2C135A8E00BA6CF7 /* SiteImagesXIB.swift in Sources */,
+				72EC855A2C13495100BA6CF7 /* SiteDetailVM.swift in Sources */,
 				72582C9E2C102D1000A4CEF1 /* NVActivityIndicatorPresenter.swift in Sources */,
 				7251E5A02C0F2F4D00A900CE /* String+Timepiece.swift in Sources */,
 				7251E5852C0F241A00A900CE /* OtpVC.swift in Sources */,
 				7271F4F52C0DDC1A00372593 /* HomeVC.swift in Sources */,
 				7251E57C2C0EE84200A900CE /* CommonParam.swift in Sources */,
+				72E3D1FF2C13150C0041929A /* OptionsCVC.swift in Sources */,
 				7251E5892C0F293400A900CE /* OtpVM.swift in Sources */,
 				7251E5812C0EF2A100A900CE /* UIImagePicker.swift in Sources */,
 				7251E5A42C0F2F4D00A900CE /* NSDateComponents+Timepiece.swift in Sources */,
+				72E3D2012C1315600041929A /* SiteCVC.swift in Sources */,
 				7251E56B2C0EDB3900A900CE /* SplashVC.swift in Sources */,
 				7251E56F2C0EE21300A900CE /* WebServices.swift in Sources */,
+				729C7A222C1AFB0600AFC90C /* AddReplacementDetailsVC.swift in Sources */,
 				7251E5A32C0F2F4D00A900CE /* NSDate+Timepiece.swift in Sources */,
+				729C7A1E2C1AF25700AFC90C /* ReplacementVC.swift in Sources */,
+				72E3D2052C1319BD0041929A /* ListingVM.swift in Sources */,
+				72E3D1FC2C12E3AE0041929A /* SignaturePopVC.swift in Sources */,
 				72582C9F2C102D1000A4CEF1 /* NVActivityIndicatorViewable.swift in Sources */,
 				7251E5A12C0F2F4D00A900CE /* Int+Timepiece.swift in Sources */,
 				7251E5A22C0F2F4D00A900CE /* Duration.swift in Sources */,
+				72EC85542C133A5D00BA6CF7 /* SiteDetailVC.swift in Sources */,
 				7251E5742C0EE3AC00A900CE /* HomeVM.swift in Sources */,
 				7251E56D2C0EE05F00A900CE /* ViewControllerHelper.swift in Sources */,
 				7251E57F2C0EEA5B00A900CE /* FetchDataModel.swift in Sources */,
@@ -590,12 +653,17 @@
 				7251E5712C0EE36D00A900CE /* UIViewControllerExtension.swift in Sources */,
 				7251E57A2C0EE7F000A900CE /* CommonFunctions.swift in Sources */,
 				7251E5832C0F23EF00A900CE /* LoginVC.swift in Sources */,
+				72E3D2092C131E500041929A /* Cookies.swift in Sources */,
+				72E3D2072C131D580041929A /* ListingModel.swift in Sources */,
 				7271F4F12C0DDC1A00372593 /* AppDelegate.swift in Sources */,
 				7251E5782C0EE7AB00A900CE /* Proxy.swift in Sources */,
 				72582CA22C102D6700A4CEF1 /* WWCalendarTimeSelector.swift in Sources */,
+				729C7A202C1AF56300AFC90C /* AddReplacementDetailsVM.swift in Sources */,
 				7251E5872C0F252800A900CE /* LoginVM.swift in Sources */,
 				7271F5222C0DE19400372593 /* ExtensionClass.swift in Sources */,
+				72E3D2032C1316040041929A /* ListingVC.swift in Sources */,
 				7251E5762C0EE3E700A900CE /* Api.swift in Sources */,
+				7267F1D32C18558D00F50B65 /* RejectionVC.swift in Sources */,
 				7271F4F32C0DDC1A00372593 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -782,6 +850,7 @@
 				DEVELOPMENT_TEAM = G96NGZCMGU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Acme Vendor App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AFS Recce App";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Propdub would like to access your camera to upload site pictures";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Propdub wants to use your location to fetch latitude and longitude";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Propdub wants to use your location to fetch latitude and longitude";
@@ -816,6 +885,7 @@
 				DEVELOPMENT_TEAM = G96NGZCMGU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Acme Vendor App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AFS Recce App";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Propdub would like to access your camera to upload site pictures";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Propdub wants to use your location to fetch latitude and longitude";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Propdub wants to use your location to fetch latitude and longitude";

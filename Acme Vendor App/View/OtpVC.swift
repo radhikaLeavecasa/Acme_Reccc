@@ -43,8 +43,7 @@ class OtpVC: UIViewController {
                          WSRequestParams.WS_REQS_PARAM_PASSWORD: self.otp] as! [String:AnyObject]
             viewModel.otpVerifyApi(param) { val, msg in
                 if val {
-                    let vc = ViewControllerHelper.getViewController(ofType: .HomeVC, StoryboardName: .Main) as! HomeVC
-                    vc.id = self.viewModel.id
+                    let vc = ViewControllerHelper.getViewController(ofType: .ListingVC, StoryboardName: .Main) as! ListingVC
                     self.setView(vc: vc)
                 } else {
                     if msg == CommonError.INTERNET {

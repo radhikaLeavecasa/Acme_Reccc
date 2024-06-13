@@ -11,6 +11,11 @@ import CoreLocation
 class HomeVC: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
 
     //MARK: - @IBOutlets
+    @IBOutlet weak var btnNo: UIButton!
+    @IBOutlet weak var btnYes: UIButton!
+    @IBOutlet weak var txtFldAlternateNumberOwner: UITextField!
+    @IBOutlet weak var txtFldAlternateRetailName: UITextField!
+    @IBOutlet weak var txtFldSq: UITextField!
     @IBOutlet weak var btnOwnerSignature: UIButton!
     @IBOutlet var btnStorePhoto: [UIButton]!
     @IBOutlet weak var imgVwOwnerSignature: UIImageView!
@@ -44,43 +49,19 @@ class HomeVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
     var viewModel = HomeVM()
     var locationManager = CLLocationManager()
     var selectedDate = Date()
-    var id = Int()
     var currentLoc: CLLocation!
+    var selectedStatus = Int()
+    var isRetailerCode = false
     //MARK: - Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnYes.isSelected = true
         self.locationManager.requestWhenInUseAuthorization()
     }
     //MARK: - @IBActions
-    @IBAction func actionCalendar(_ sender: Any) {
-        //txtFldDate.becomeFirstResponder()
-    }
-    @IBAction func actionLogout(_ sender: Any) {
-        
-        let alert = UIAlertController(title: "Logout?", message: "Are you sure you want to logout?", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: { _ in
-        }))
-        alert.addAction(UIAlertAction(title: "Logout",
-                                      style: UIAlertAction.Style.default,
-                                      handler: {(_: UIAlertAction!) in
-            self.viewModel.logoutApi { val, msg in
-                if val {
-                    Proxy.shared.showSnackBar(message: CommonMessage.LOGGED_OUT)
-                    let vc = ViewControllerHelper.getViewController(ofType: .LoginVC, StoryboardName: .Main) as! LoginVC
-                    self.setView(vc: vc)
-                    Cookies.deleteUserToken()
-                } else {
-                    if msg == CommonError.INTERNET {
-                        Proxy.shared.showSnackBar(message: CommonMessage.NO_INTERNET_CONNECTION)
-                    } else {
-                        Proxy.shared.showSnackBar(message: msg)
-                    }
-                }
-            }
-        }))
-        
-        DispatchQueue.main.async {
-            self.present(alert, animated: false, completion: nil)
+    @IBAction func actionReplaceCode(_ sender: Any) {
+        if let vc = ViewControllerHelper.getViewController(ofType: .AddReplacementDetailsVC, StoryboardName: .Main) as? AddReplacementDetailsVC {
+            self.pushView(vc: vc)
         }
     }
     @IBAction func actionAddPhotograph(_ sender: UIButton) {
@@ -92,8 +73,6 @@ class HomeVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
             if(self.locationManager.authorizationStatus == .authorizedWhenInUse ||
                self.locationManager.authorizationStatus == .authorizedAlways) {
                 self.currentLoc = self.locationManager.location
-                print(self.currentLoc.coordinate.latitude)
-                print(self.currentLoc.coordinate.longitude)
                 self.txtFldLatitude.text = "\(self.currentLoc.coordinate.latitude)"
                 self.txtFldLongitude.text = "\(self.currentLoc.coordinate.longitude)"
             }
@@ -106,6 +85,8 @@ class HomeVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
         } else {
             viewModel.fetchApi(txtFldRetailerCode.text ?? "") {val,msg in
                 if val {
+                    self.isRetailerCode = true
+                    
                     let dict = self.viewModel.homeModel
                     self.txtFldLocation.text = dict?.address
                     self.txtFldAsmNumber.text = dict?.asmContact
@@ -115,7 +96,17 @@ class HomeVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
                     self.txtFldDistrict.text = dict?.district
                     self.txtFldShopName.text = dict?.retailerName
                     self.txtFldState.text = dict?.state
-                    self.txtFldDate.text = self.convertDateToString(Date(), format: "yyyy-MM-dd")
+                    
+                    self.txtFldLocation.isUserInteractionEnabled = self.txtFldLocation.text == ""
+                    self.txtFldAsmNumber.isUserInteractionEnabled = self.txtFldAsmNumber.text == ""
+                    self.txtFldAsmName.isUserInteractionEnabled = self.txtFldAsmName.text == ""
+                    self.txtFldCity.isUserInteractionEnabled = self.txtFldCity.text == ""
+                    self.txtFldOwnerMobile.isUserInteractionEnabled = self.txtFldOwnerMobile.text == ""
+                    self.txtFldDistrict.isUserInteractionEnabled = self.txtFldDistrict.text == ""
+                    self.txtFldShopName.isUserInteractionEnabled = self.txtFldShopName.text == ""
+                    self.txtFldState.isUserInteractionEnabled = self.txtFldState.text == ""
+                    self.txtFldDate.text = "\(self.convertDateToString(Date(), format: "yyyy-MM-dd")), \(self.convertDateToString(Date(), format: "HH:mm"))"
+
                     self.txtFldRetailerCode.resignFirstResponder()
                 } else {
                     if msg == CommonError.INTERNET {
@@ -129,80 +120,125 @@ class HomeVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
     }
     
     @IBAction func actionStorePhoto1(_ sender: UIButton) {
-        ImagePickerManager().openCamera(self) { image in
-            if sender.tag != 4 {
+        if sender.tag != 4 {
+            ImagePickerManager().openCamera(self) { image in
                 self.imgVwStorePhotos[sender.tag].image = image
                 self.btnStorePhoto[sender.tag].setTitle("Retake Store Photo \(sender.tag+1)", for: .normal)
                 self.btnStorePhoto[sender.tag].titleLabel?.font = UIFont(name: "DMSans18pt-Black", size: 14)
+                switch sender.tag {
+                case 0:
+                    self.cnstHeightStorePhoto1.constant = 80
+                case 1:
+                    self.cnstHeightStorePhoto2.constant = 80
+                case 2:
+                    self.cnstHeightStorePhoto3.constant = 80
+                case 3:
+                    self.cnstHeightStorePhoto4.constant = 80
+                default:
+                    break
+                }
             }
-            switch sender.tag {
-            case 0:
-                self.cnstHeightStorePhoto1.constant = 80
-            case 1:
-                self.cnstHeightStorePhoto2.constant = 80
-            case 2:
-                self.cnstHeightStorePhoto3.constant = 80
-            case 3:
-                self.cnstHeightStorePhoto4.constant = 80
-            default:
-                self.cnstHeightSignatureOfOwner.constant = 80
-                self.imgVwOwnerSignature.image = image
-                self.btnOwnerSignature.titleLabel?.font = UIFont(name: "DMSans18pt-Black", size: 14)
-                self.btnOwnerSignature.setTitle("Retake Signature of owner", for: .normal)
+        } else {
+            if let vc = ViewControllerHelper.getViewController(ofType: .SignaturePopVC, StoryboardName: .Main) as? SignaturePopVC {
+                vc.modalPresentationStyle = .overFullScreen
+                vc.modalTransitionStyle = .crossDissolve
+                
+                vc.eSignDelegate = { signImg in
+                    self.cnstHeightSignatureOfOwner.constant = 80
+                    self.imgVwOwnerSignature.image = signImg
+                    self.btnOwnerSignature.titleLabel?.font = UIFont(name: "DMSans18pt-Black", size: 14)
+                    self.btnOwnerSignature.setTitle("Retake Signature of owner", for: .normal)
+                }
+                self.present(vc, animated: true)
             }
         }
     }
     @IBAction func actionUploadSiteDetails(_ sender: UIButton) {
-        if isValidateDetails() {
-            let area = Double((Double(txtFldHeight.text!) ?? 0.0)*(Double(txtFldWidth.text!) ?? 0.0))
-            let param: [String:AnyObject] = [WSRequestParams.WS_REQS_PARAM_DISTRICT : txtFldDistrict.text!,
-                                             WSRequestParams.WS_REQS_PARAM_STATE: txtFldState.text!,
-                                             WSRequestParams.WS_REQS_PARAM_CITY: txtFldCity.text!,
-                                             WSRequestParams.WS_REQS_PARAM_RETAIL_NAME: txtFldShopName.text!,
-                                             WSRequestParams.WS_REQS_PARAM_LAT : txtFldLatitude.text!,
-                                             WSRequestParams.WS_REQS_PARAM_LONG: txtFldLongitude.text!,
-                                             WSRequestParams.WS_REQS_PARAM_LENGTH: txtFldHeight.text!,
-                                             WSRequestParams.WS_REQS_PARAM_WIDTH: txtFldWidth.text!,
-                                             WSRequestParams.WS_REQS_PARAM_DATE: txtFldDate.text!,
-                                             WSRequestParams.WS_REQS_PARAM_OWNER_NAME: txtFldOwnerName.text!,
-                                             WSRequestParams.WS_REQS_PARAM_EMAIL: txtFldOwnerEmail.text!,
-                                             WSRequestParams.WS_REQS_PARAM_MOBILE: txtFldOwnerMobile.text!,
-                                             WSRequestParams.WS_REQS_PARAM_REMARKS: txtFldRemarks.text ?? "",
-                                             WSRequestParams.WS_REQS_PARAM_CREATED_BY: "\(Cookies.getUserToken())",
-                                             WSRequestParams.WS_REQS_PARAM_LOCATION: txtFldLocation.text!,
-                                             WSRequestParams.WS_REQS_PARAM_AREA: "\(area)",
-                                             WSRequestParams.WS_REQS_PARAM_ASM_NAME: txtFldAsmName.text!,
-                                             WSRequestParams.WS_REQS_PARAM_DIVISION: viewModel.homeModel?.division ?? "",
-                                             WSRequestParams.WS_REQS_PARAM_RETAILER_CODE: viewModel.homeModel?.retailerCode ?? "",
-                                             WSRequestParams.WS_REQS_PARAM_ASM_MOBILE:txtFldAsmNumber.text!] as! [String:AnyObject]
-            
-            let imgParam: [String: UIImage] = [WSRequestParams.WS_REQS_PARAM_IMAGE: imgVwSitePhoto.image,
-                                               WSRequestParams.WS_REQS_PARAM_IMAGE1: imgVwStorePhotos[0].image,
-                                               WSRequestParams.WS_REQS_PARAM_IMAGE2: imgVwStorePhotos[1].image,
-                                               WSRequestParams.WS_REQS_PARAM_IMAGE3: imgVwStorePhotos[2].image,
-                                               WSRequestParams.WS_REQS_PARAM_IMAGE4: imgVwStorePhotos[3].image,
-                                               WSRequestParams.WS_REQS_PARAM_OWNER_SIGN: imgVwOwnerSignature.image] as! [String: UIImage]
-            
-            viewModel.uploadSiteDetails(param: param, dictImage: imgParam) { val, msg in
-                if val {
-                    Proxy.shared.showSnackBar(message: msg)
-                    self.resetData()
-                } else {
-                    if msg == CommonError.INTERNET {
-                        Proxy.shared.showSnackBar(message: CommonMessage.NO_INTERNET_CONNECTION)
-                    } else {
-                        Proxy.shared.showSnackBar(message: msg)
-                    }
-                }
+        if selectedStatus == 0 {
+            if isValidateDetails() {
+                apiMethod()
             }
+        } else {
+            apiMethod()
         }
     }
     
+    @IBAction func actionYesNo(_ sender: UIButton) {
+        if self.isRetailerCode {
+            selectedStatus = sender.tag
+            switch sender.tag {
+            case 0:
+                btnYes.isSelected = true
+                btnNo.isSelected = false
+            default:
+                btnYes.isSelected = false
+                btnNo.isSelected = true
+            }
+        } else {
+            Proxy.shared.showSnackBar(message: "Please fetch retailer code first")
+        }
+    }
     @IBAction func actionResetAllFields(_ sender: Any) {
         resetData()
     }
     //MARK: - Custom method
+    func apiMethod(){
+        let area = Double((Double(txtFldHeight.text ?? "0") ?? 0.0)*(Double(txtFldWidth.text ?? "0") ?? 0.0))
+        
+        let param: [String:Any] = [WSRequestParams.WS_REQS_PARAM_DISTRICT: txtFldDistrict.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_STATE: txtFldState.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_CITY: txtFldCity.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_RETAIL_NAME: txtFldShopName.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_LAT : txtFldLatitude.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_LONG: txtFldLongitude.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_LENGTH: txtFldHeight.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_WIDTH: txtFldWidth.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_DATE: txtFldDate.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_OWNER_NAME: txtFldOwnerName.text ?? "",
+//                                   WSRequestParams.WS_REQS_PARAM_EMAIL: txtFldOwnerEmail.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_MOBILE: txtFldOwnerMobile.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_REMARKS: txtFldRemarks.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_CREATED_BY: "\(Cookies.userInfo()?.id ?? 0)",
+                                   WSRequestParams.WS_REQS_PARAM_LOCATION: txtFldLocation.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_AREA: "\(area)",
+                                   WSRequestParams.WS_REQS_PARAM_ASM_NAME: txtFldAsmName.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_DIVISION: viewModel.homeModel?.division ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_RETAILER_CODE: viewModel.homeModel?.retailerCode ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_ASM_MOBILE: txtFldAsmNumber.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_CODE: viewModel.homeModel?.code ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_BRAND: txtFldAlternateRetailName.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_OWNER_ALT_NUM: txtFldAlternateNumberOwner.text ?? "",
+                                   WSRequestParams.WS_REQS_PARAM_OWNER_STATUS: selectedStatus == 0 ? "Accepted" : "Rejected"]
+        
+        var imgParam: [String: UIImage] = [:]
+        
+        if let sitePhoto = imgVwSitePhoto.image {
+            imgParam[WSRequestParams.WS_REQS_PARAM_IMAGE] = sitePhoto
+        }
+        for (index, imageView) in imgVwStorePhotos.enumerated() {
+            if let storePhoto = imageView.image {
+                imgParam["\(WSRequestParams.WS_REQS_PARAM_IMAGE)\(index + 1)"] = storePhoto
+            }
+        }
+        if let ownerSignature = imgVwOwnerSignature.image {
+            imgParam[WSRequestParams.WS_REQS_PARAM_OWNER_SIGN] = ownerSignature
+        }
+        
+        viewModel.uploadSiteDetails(param: param, dictImage: imgParam) { val, msg in
+            if val {
+                Proxy.shared.showSnackBar(message: msg)
+                self.resetData()
+            } else {
+                if msg == CommonError.INTERNET {
+                    Proxy.shared.showSnackBar(message: CommonMessage.NO_INTERNET_CONNECTION)
+                } else {
+                    Proxy.shared.showSnackBar(message: msg)
+                }
+            }
+        }
+    }
     func resetData(){
+        self.txtFldSq.text = ""
         self.txtFldLocation.text = ""
         self.txtFldAsmNumber.text = ""
         self.txtFldAsmName.text = ""
@@ -221,6 +257,12 @@ class HomeVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
         self.txtFldLatitude.text = ""
         self.txtFldLongitude.text = ""
         self.txtFldRemarks.text = ""
+        self.txtFldAlternateRetailName.text = ""
+        self.txtFldAlternateNumberOwner.text = ""
+        self.btnYes.isSelected = true
+        self.btnNo.isSelected = false
+        self.selectedStatus = 0
+        
         self.imgVwSitePhoto.image = nil
         self.imgVwStorePhotos[0].image = nil
         self.imgVwStorePhotos[1].image = nil
@@ -249,6 +291,7 @@ class HomeVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
         self.lblRetakeSitePhoto.font = UIFont(name: "DMSans24pt-Regular", size: 14)
         
     }
+    
     func isValidateDetails() -> Bool {
         if txtFldHeight.text?.isEmptyCheck() == true {
             Proxy.shared.showSnackBar(message: CommonMessage.ENTER_HEIGHT)
@@ -274,13 +317,16 @@ class HomeVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
         } else if txtFldOwnerName.text?.isEmptyCheck() == true {
             Proxy.shared.showSnackBar(message: CommonMessage.ENTER_OWNER_NAME)
             return false
-        } else if txtFldOwnerEmail.text?.isEmptyCheck() == true {
-            Proxy.shared.showSnackBar(message: CommonMessage.ENTER_OWNER_EMAIL)
-            return false
-        } else if txtFldOwnerEmail.text?.isValidEmail() == false {
-            Proxy.shared.showSnackBar(message: CommonMessage.ENTER_VALID_OWNER_EMAIL)
-            return false
-        } else if txtFldOwnerMobile.text?.isEmptyCheck() == true {
+        } 
+//        else if txtFldOwnerEmail.text?.isEmptyCheck() == true {
+//            Proxy.shared.showSnackBar(message: CommonMessage.ENTER_OWNER_EMAIL)
+//            return false
+//        } 
+//        else if txtFldOwnerEmail.text?.isValidEmail() == false {
+//            Proxy.shared.showSnackBar(message: CommonMessage.ENTER_VALID_OWNER_EMAIL)
+//            return false
+//        }
+        else if txtFldOwnerMobile.text?.isEmptyCheck() == true {
             Proxy.shared.showSnackBar(message: CommonMessage.ENTER_OWNER_MOBILE)
             return false
         } else if txtFldYourName.text?.isEmptyCheck() == true {
@@ -324,7 +370,7 @@ class HomeVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCo
 extension HomeVC: UITextFieldDelegate{
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        if textField == txtFldOwnerMobile || textField == txtFldAsmNumber {
+        if textField == txtFldOwnerMobile || textField == txtFldAsmNumber || textField == txtFldAlternateNumberOwner {
             let newText = (textField.text as NSString?)?.replacingCharacters(in: range, with: string) ?? ""
             if newText.count > 10 {
                 return false
@@ -332,44 +378,11 @@ extension HomeVC: UITextFieldDelegate{
         }
         return true
     }
-    
-//    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-//        if textField == txtFldDate {
-//            view.endEditing(true)
-//            textField.resignFirstResponder()
-//            self.openDateCalendar()
-//            return false
-//        }
-//        return true
-//    }
-    
-    func openDateCalendar() {
-        if let calendar = UIStoryboard.init(name: ViewControllerType.WWCalendarTimeSelector.rawValue, bundle: nil).instantiateInitialViewController() as? WWCalendarTimeSelector {
-            view.endEditing(true)
-            calendar.delegate = self
-            calendar.optionCurrentDate = selectedDate
-            calendar.optionStyles.showDateMonth(true)
-            calendar.optionStyles.showMonth(false)
-            calendar.optionStyles.showYear(true)
-            calendar.optionStyles.showTime(false)
-            calendar.optionButtonShowCancel = true
-            self.present(calendar, animated: true, completion: nil)
-        }
-    }
-}
-
-extension HomeVC: WWCalendarTimeSelectorProtocol {
-    
-    func WWCalendarTimeSelectorDone(_ selector: WWCalendarTimeSelector, date: Date) {
-        selectedDate = date
-        txtFldDate.text = self.convertDateWithDateFormater("yyyy-MM-dd", date)
-    }
-    
-    func WWCalendarTimeSelectorShouldSelectDate(_ selector: WWCalendarTimeSelector, date: Date) -> Bool {
-        if date < Date() {
-            return false
-        } else {
-            return true
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        if textField == txtFldWidth || textField == txtFldHeight  {
+            if txtFldHeight.text != "" && txtFldWidth.text != "" {
+                txtFldSq.text = "\(Double((Double(txtFldHeight.text!) ?? 0.0)*(Double(txtFldWidth.text!) ?? 0.0)))"
+            }
         }
     }
 }

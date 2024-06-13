@@ -11,6 +11,8 @@ class GetData{
     
     static let share = GetData()
     
+    var loginType = String()
+    
     func getAppVersion() -> String{
         return Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
     }
@@ -95,77 +97,4 @@ class GetData{
 class AddOndata{
     static let share = AddOndata()
     var data = [[String:Any]]()
-}
-
-class Cookies {
-    
-    class func userInfoSave(dict : [String : Any]? = nil){
-        let keyData = NSKeyedArchiver.archivedData(withRootObject: dict as Any)
-        UserDefaults.standard.set(keyData, forKey: "userInfoSave")
-        UserDefaults.standard.synchronize()
-    }
-    
-    class func userInfo() -> NSDictionary? {
-        if let some =  UserDefaults.standard.object(forKey: "userInfoSave") as? NSData {
-            if let dict = NSKeyedUnarchiver.unarchiveObject(with: some as Data) as? NSDictionary {
-                return dict
-            }
-        }
-        return nil
-    }
-    
-    class func saveUserToken(token: String) {
-        UserDefaults.standard.set(token, forKey: CommonParam.DEVICE_TOKEN)
-    }
-    
-    class func saveDeviceToken(token: String) {
-        UserDefaults.standard.set(token, forKey: "deviceToken")
-    }
-    
-    class func saveUserTokenId(tokenId: Int) {
-        UserDefaults.standard.set(tokenId, forKey: "UserTokenId")
-    }
-    
-    class func getUserTokenId() -> Int {
-        if let token = UserDefaults.standard.value(forKey: "UserTokenId") as? Int {
-            return token
-        }
-        return 0
-    }
-    
-//    class func getInto() -> Bool {
-//        if let intro = UserDefaults.standard.value(forKey: CommonParam.INTRO_DONE) as? Bool {
-//            return intro
-//        }
-//        return false
-//    }
-    
-    class func getDeviceToken() -> String {
-        if let token = UserDefaults.standard.value(forKey: "deviceToken") as? String {
-            return token
-        }
-        return "123"
-    }
-    
-    class func getUserToken() -> String {
-        if let token = UserDefaults.standard.value(forKey: CommonParam.USER_TOKEN) as? String {
-            return token
-        }
-        return ""
-    }
-    
-    class func getUserCredit() -> String {
-        if let token = UserDefaults.standard.value(forKey: "Passes") as? String {
-            return token
-        }
-        return ""
-    }
-    
-    class func deleteUserInfo() {
-        UserDefaults.standard.removeObject(forKey: "userInfoSave")
-    }
-    
-    class func deleteUserToken() {
-        UserDefaults.standard.removeObject(forKey: CommonParam.USER_TOKEN)
-    }
 }
